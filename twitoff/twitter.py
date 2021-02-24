@@ -51,6 +51,5 @@ def add_or_update_user(username):
 
 
 def update_all_users():
-    Users = User.query.all()
-    for user in Users:
+    for user in User.query.all():
         add_or_update_user(user.name)
